@@ -1,0 +1,12 @@
+[Unit]
+Wants=network-online.target
+After=network-online.target
+Description=Housing service based on playwright
+
+[Service]
+Type=oneshot
+User=user_to_run_the_service_as
+WorkingDirectory=a_directory_the_user_has_write_access_to
+#If you would like debug info printed
+Environment="DEBUG=\"housing\""
+ExecStart=/bin/python absolute_path_to_main.py

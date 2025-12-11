@@ -1,0 +1,8 @@
+[Unit]
+Wants=network-online.target
+After=network-online.target
+Description=Housing service based on Playwright, running as a Docker container
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/docker start housing
