@@ -1,7 +1,7 @@
 # Housing
 
 ## What is this?
-A scraper helping poor people looking for accomodation in The Netherlands. If you never lived there, you can't understand. Checks common housing websites and automatically replies to new listings. Based on [Playwright](https://playwright.dev/)
+A scraper helping poor people looking for accomodation in The Netherlands. If you never lived there, you can't understand. Checks common housing websites and automatically replies to new listings. Based on [Playwright](https://playwright.dev/).
 
 ## Note
 This tool doesn't do miracles. Don't expect to find an accomodation quickly just because you use this: you still have to go to viewings, make a good impression to landlords, be able to provide the guarantees they ask for and so on. 
@@ -27,7 +27,7 @@ Check with
 
 
 ### Bare metal
-Create a Python virtual enviroment and install the requirements from `requirements.txt`. Then, activate it and run `playwright install`. See ![Playwright's installation instructions](https://playwright.dev/python/docs/intro) for more information.  
+Create a Python virtual enviroment and install the requirements from `requirements.txt`. Then, activate it and run `playwright install`. See [Playwright's installation instructions](https://playwright.dev/python/docs/intro) for more information.  
 Review the files `housing.service`and `housing.timer` inside the `Install` directory, and modify them based on your needs.
 Copy (or create links) the unit and timer to `/etc/systemd/system/`. Then enable and start the timer  
 `$ sudo systemctl enable housing.timer && sudo systemctl start housing.timer`  
